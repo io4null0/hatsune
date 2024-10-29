@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Roll Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.36/Tone.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Piano Roll Tool</h1>
+        <div id="controls">
+            <button onclick="playSequence()">Play</button>
+            <button onclick="stopSequence()">Stop</button>
+            <label for="tempo">Tempo:</label>
+            <input type="range" min="60" max="180" value="120" id="tempo-slider" onchange="updateTempo(this.value)">
+        </div>
+        <div id="piano-roll"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
