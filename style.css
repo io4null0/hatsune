@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+#app {
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+#controls {
+    margin-bottom: 20px;
+}
+
+#piano-roll {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(8, 30px);
+    gap: 2px;
+}
+
+.note {
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.note.active {
+    background-color: #4caf50;
+}
